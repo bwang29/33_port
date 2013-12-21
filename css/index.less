@@ -99,11 +99,10 @@ a{
 		display: inline-block;
 		vertical-align: top;
 		width: @right_width/2 - 40px;
-		padding: 30px;
-		box-sizing:border-box;
+		padding: 0px;
+		box-sizing: border-box;
     -moz-box-sizing:border-box; /* Firefox */
-		margin: 0 15px 30px 15px;
-		border: 1px solid @clr_light;
+		margin: 0 15px 70px 15px;
 		.image{
 			background-size: cover;
 			background-position: center;
@@ -126,6 +125,8 @@ a{
 		}
 		.texts{
 			line-height: 1.7;
+			text-align:justify;
+			text-justify:distribute;
 			font-size: 15px;
 			.text{
 				margin-bottom: 10px;
@@ -133,7 +134,8 @@ a{
 		}
 		.links{
 			.link{
-
+				display: inline;
+				margin-right: 15px;
 			}
 			i{
 				color: @clr_red;
