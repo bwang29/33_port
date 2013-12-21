@@ -1,0 +1,144 @@
+@import "elements.less";
+@font_sans: 'Noto Sans', sans-serif;
+@font_serif: 'Noto Serif', serif;
+@font_dense: 'Roboto Condensed', sans-serif;
+@clr_red: #F3887D;
+@clr_dark: #333332;
+@clr_blue: #3498db;
+@clr_light: #f0f0f0;
+@right_width: 800px;
+
+body{
+  color: @clr_dark;
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: @font_sans;
+}
+
+
+a{
+	color:@clr_red;
+	text-decoration: none;
+	cursor: pointer;
+	.transition(0.2s);
+	&:hover{
+		color: @clr_dark;
+	};
+}
+
+#wrapper{
+	width: 100%;
+	padding: 50px 0;
+	#left{
+		width: 300px;
+		padding: 20px;
+		position:fixed;
+		vertical-align: top;
+	}
+	#right{
+		min-width: @right_width;
+		padding: 20px;
+		position: absolute;
+		left: 340px;
+		vertical-align: top;
+	}
+}
+
+.meta{
+	.tabs{
+		.tab{
+			text-align: right;
+			margin-bottom: 10px;
+			font-size: 25px;
+			font-family: @font_dense;
+			cursor: pointer;
+			&:hover{
+				.transition;
+				color: @clr_blue;
+			}
+			&.active{
+				color: @clr_blue;
+			}
+		}
+	}
+}
+
+.home{
+	width: @right_width;
+	.image{
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		width: 100%;
+	}
+	.title{
+		font-size: 30px;
+		margin: 20px 0;
+	}
+	.intro{
+		width: 500px;
+		font-size: 13px;
+		line-height: 1.7;
+		text-align:justify;
+		text-justify:distribute;
+	}
+}
+
+.composition{
+	width: @right_width;
+	.sound_cloud{
+		margin-bottom: 50px;
+	}
+}
+
+.projects{
+	width: @right_width;
+	position:relative;
+	.project{
+		display: inline-block;
+		vertical-align: top;
+		width: @right_width/2 - 40px;
+		padding: 30px;
+		box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+		margin: 0 15px 30px 15px;
+		border: 1px solid @clr_light;
+		.image{
+			background-size: cover;
+			background-position: center;
+			height: 200px;
+			width: 100%;
+		}
+		.title{
+			font-size: 20px;
+			margin: 10px 0;
+		}
+		.labels{
+			margin: 5px 0;
+			.label{
+				display:inline-block;
+				margin-right:10px;
+				font-weight: bold;
+				font-size: 14px;
+				color: @clr_blue;
+			}
+		}
+		.texts{
+			line-height: 1.7;
+			font-size: 15px;
+			.text{
+				margin-bottom: 10px;
+			}
+		}
+		.links{
+			.link{
+
+			}
+			i{
+				color: @clr_red;
+			}
+		}
+
+	}
+}

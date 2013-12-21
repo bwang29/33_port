@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta name="KEYWORDS" content="Zhengshan (Kitty) Shi,Homepage,portfolio,website,resume,blog"/>
+  <meta name="DESCRIPTION" content="Zhengshan (Kitty) Shi"/>
+  <title>Zhengshan (Kitty) Shi's Homepage</title>
+  <meta name="revisit-after" content="14 days"/>
+  <meta name="robots" content="all"/>
+  <meta name="Author" content="Zhengshan (Kitty) Shi"/>
+  <meta name="desciption" content="Zhengshan (Kitty) Shi"/>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet/less" type="text/css" href="css/index.less" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <script src="js/jquery-1.9.0.min.js"></script>
+  <script src="js/less-1.3.3.min.js"></script>
+  <script src="js/handlebars-1.0.rc.1.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<script id="meta" type="text/x-handlebars-template">
+  <div class="meta">
+    <div class="tabs">
+      {{#tabs}}
+        <div class="tab" data-tab="{{this}}">{{this}}</div>
+      {{/tabs}}
+    </div>
+  </div>
+</script>
+<script id="home" type="text/x-handlebars-template">
+  <div class="home">
+    <div class="image" style="background-image:url({{image}})"></div>
+    <div class="title">{{name}}</div>
+    <div class="intro">{{{intro}}</div>
+  </div>
+</script>
+<script id="projects" type="text/x-handlebars-template">
+  <div class="projects">
+    {{#pieces}}
+    <div class="project">
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="title">{{title}}</div>
+      <div class="labels">
+        {{#labels}}
+          <div class="label">{{this}}</div>
+        {{/labels}}
+      </div>
+      <div class="texts">
+        {{#texts}}
+          <div class="text">{{this}}</div>
+        {{/texts}}
+      </div>
+      <div class="links">
+        {{#links}}
+          <div class="link">
+            <i class="fa {{this.icon}}"></i>
+            <a href="{{this.target}}" target="_blank">{{this.name}}</a>
+          </div>
+        {{/links}}
+      </div>
+    </div>
+    {{/pieces}}
+  </div>
+</script>
+<script id="performance" type="text/x-handlebars-template">
+  <div class="performance">
+    {{#pieces}}
+      <div class="vimeo_video">
+        {{{this.vimeo_video}}}
+      </div>
+    {{/pieces}}
+  </div>
+</script>
+<script id="composition" type="text/x-handlebars-template">
+  <div class="composition">
+    {{#pieces}}
+      <div class="sound_cloud">
+        {{{this.sound_cloud}}}
+      </div>
+    {{/pieces}}
+  </div>
+</script>
+<script id="cv" type="text/x-handlebars-template">
+  <div class="cv">
+    CV
+  </div>
+</script>
+<div id="wrapper">
+  <div id="left"></div>
+  <div id="right"></div>
+</div>
+
+
+</body>
+</html>
