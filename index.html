@@ -64,6 +64,7 @@
 <script id="performance" type="text/x-handlebars-template">
   <div class="performance">
     {{#pieces}}
+      <h3>{{this.title}}</h3>
       <div class="vimeo_video">
         {{{this.vimeo_video}}}
       </div>
@@ -81,7 +82,11 @@
 </script>
 <script id="cv" type="text/x-handlebars-template">
   <div class="cv">
-    CV
+    <img src="images/kitty.jpg" width="500px"/>
+    <br/>
+    <a href="files/CV_ZhengshanShi.pdf" target="_blank"><i class="fa fa-file"></i> Download my CV</div>
+    <br/>
+    <a href="mailto:kittyshi@ccrma.stanford.edu"><i class="fa fa-envelope"></i> Contact me</div>
   </div>
 </script>
 <div id="wrapper">

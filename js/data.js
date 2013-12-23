@@ -14,7 +14,7 @@ var projects = {
 		{
 			image: "/images/CS229-thumb.png",
 			title: "A Computational Model for Multi-Instrument Music Transcription",
-			labels: ["PLCA","Instrument Classification"],
+			labels: ["PLCA","Instrument Classification","Machine Learning"],
 			links:[
 				{
 					target: "files/CS229-paper.pdf",
@@ -105,6 +105,41 @@ var projects = {
 			texts:[
 				"This paper describes an application that provides real-time high accuracy room acoustics simulation. Using a multi-touch interface, the user can easily manipulate the dimensions of a virtual space while hearing the room's acoustics change in real-time. Such an interface enables a more fluid and intuitive control of our application, which better lends itself to expressive artistic gestures for use in such activities as sound design, performance, and education. "
 			]
+		},
+		{
+			image: "/images/Decay-thumb.jpg",
+			title: "Decay Characteristics of Piano Tones",
+			labels: ["Piano Decay"],
+			links:[
+				{
+					target: "files/Decay-paper.pdf",
+					name: "Paper",
+					icon: "fa-file"
+				}
+			],
+			texts:[
+				"This paper did experimentally based research into the piano's decay time for both the compound decay itself and the study of a piano synthesizer in order to provide a clear explanation of the piano's decay characteristics."
+			]
+		},
+		{
+			image: "/images/Go-bang-music-thumb.jpg",
+			title: "Go-Bang Music",
+			labels: ["Sonified Chess Board"],
+			links:[
+				{
+					target: "files/Go-bang-music.zip",
+					name: "Source code",
+					icon: "fa-file"
+				},
+				{
+					target: "https://ccrma.stanford.edu/~kittyshi/220a/fp.html",
+					name: "Project page",
+					icon: "fa-globe"
+				}
+			],
+			texts:[
+				"The Go-Bang Music aims to create a real-time sonified chess board for the game 'goBang' - Aka: Five-in-row, with the go chess piece. I'm exploring the music from a harmonic prospective , with a loop-based approach. And I'm also manipulating with the interactive Open sound control (OSC) through Processing. ","Each new sound generated is depend on the board cell triggered by the user. The music is changing realtime according to the user's control. Think of the 16x16 chess board as a 'score' with 16 different notes and 4 measures (4/4). The system is reading the 'chessBoard score' from left to right, and play notes according to the Go pieces."
+			]
 		}
 	]
 };
@@ -127,6 +162,7 @@ var composition = {
 var performance = {
 	pieces: [
 		{
+			title: "Bagpipes Performance - Scotland the Brave",
 			vimeo_video:'<iframe src="//player.vimeo.com/video/82433056?portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/82433056">Bagpipes</a> from <a href="http://vimeo.com/kittyshi">Zhengshan Shi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
 		}
 	]
